@@ -19,14 +19,47 @@
         <h1 class="treino_titulo">Ficha de Treinos</h1>
     </header>
     <main class="principal">
-        <div class="menu">
-            <div class="menu__itens ativa" onclick="pull1()">Pull I</div>
-            <div class="menu__itens ativa" onclick="push1()">Push I</div>
-            <div class="menu__itens ativa" onclick="legs1()">Legs I</div>
-            <div class="menu__itens ativa" onclick="pull2()">Pull II</div>
-            <div class="menu__itens ativa" onclick="legs2()">Legs II</div>
-            <div class="menu__itens ativa" onclick="push2()">Push II</div>
+        <div class="menu__principal">
+          <nav class="navegacao">
+            <a id="treinos" class="icon__menu">
+              <img class="icon__img" src="./assets/img/menu/halter.png" alt="" srcset="">
+              <h2 class="icon__menu___texto">Treinos</h2>
+            </a>
+            <a class="icon__menu">
+              <img class="icon__img" src="./assets/img/menu/imc.png" alt="" srcset="">
+              <h2 class="icon__menu___texto">IMC</h2>
+            </a>
+            <a class="icon__menu">
+              <img class="icon__img" src="./assets/img/menu/dicas.svg" alt="" srcset="">
+              <h2 class="icon__menu___texto">Dicas</h2>
+            </a>
+          </nav>
+
+            <div  class="menu__treinos">
+              <div class="menu__treinos___selecao mTS_hide" id="tiposDeTreinos">
+                <div class="menu__treinos___selecao1" id="abc2x__lista">ABC 2x</div>
+                <div class="menu__treinos___selecao1" id="abcde__lista">ABCDE</div>
+              </div>
+
+                <div class="ABC1 ABC2x_hide" id="abc2xtreinos">
+                    <div class="menu__treinos_geral ativa" onclick="pull1()">Pull I</div>
+                    <div class="menu__treinos_geral ativa" onclick="push1()">Push I</div>
+                    <div class="menu__treinos_geral ativa" onclick="legs1()">Legs I</div>
+                    <div class="menu__treinos_geral ativa" onclick="pull2()">Pull II</div>
+                    <div class="menu__treinos_geral ativa" onclick="legs2()">Legs II</div>
+                    <div class="menu__treinos_geral ativa" onclick="push2()">Push II</div>
+                </div>
+
+                <div class="ABCDE abcde_hide" id="abcdetreinos">
+                  <div class="menu__treinos_geral ativa" onclick="pull1()">Dorsais</div>
+                  <div class="menu__treinos_geral ativa" onclick="push1()">MMII</div>
+                  <div class="menu__treinos_geral ativa" onclick="legs1()">Delts</div>
+                  <div class="menu__treinos_geral ativa" onclick="pull2()">Peitorais</div>
+                  <div class="menu__treinos_geral ativa" onclick="legs2()">Pontos Fracos</div>
+              </div>
+            </div>
         </div>
+        
 
         <div class="conteudo" id="conteudo">
             <img class="conteudo__imagem" id="conteudo__imagem" src="./assets/img/nevergiveup.svg" alt="" srcset="">
@@ -37,5 +70,6 @@
         DESENVOLVIDO POR CATARSY©
     </footer>
     <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/treinos.js"></script>
 </body>
 </html>
