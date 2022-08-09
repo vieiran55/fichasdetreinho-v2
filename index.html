@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinos</title>
+    
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+
+</head>
+<body class="corpo">
+    <header class="cabecalho">
+        <h1 class="treino_titulo">Ficha de Treinos</h1>
+    </header>
+    <main class="principal">
+        <div class="menu">
+            <div class="menu__itens ativa" onclick="pull1()">Pull I</div>
+            <div class="menu__itens ativa" onclick="push1()">Push I</div>
+            <div class="menu__itens ativa" onclick="legs1()">Legs I</div>
+            <div class="menu__itens ativa" onclick="pull2()">Pull II</div>
+            <div class="menu__itens ativa" onclick="legs2()">Legs II</div>
+            <div class="menu__itens ativa" onclick="push2()">Push II</div>
+        </div>
+
+        <div class="conteudo" id="conteudo">
+            <img class="conteudo__imagem" id="conteudo__imagem" src="./assets/img/nevergiveup.svg" alt="" srcset="">
+        </div>
+    </main>
+
+    <footer class="rodape">
+        DESENVOLVIDO POR CATARSY©
+    </footer>
+    <script src="./assets/js/index.js"></script>
+</body>
+</html>
