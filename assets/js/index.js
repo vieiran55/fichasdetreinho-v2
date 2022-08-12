@@ -2,6 +2,10 @@ function reload(){
     document.location.reload(true)
 }
 
+function imc(){
+    window.location.href = './imc.html'
+}
+
 ////////
 
 function pull1 () {

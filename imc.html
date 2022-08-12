@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinos</title>
+    
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/imc.css">
+
+    <script src="./assets/js/imc.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+</head>
+<body class="corpo">
+    <header class="cabecalho">
+        <h1 class="treino_titulo" onclick="reload()">Ficha de Treinos</h1>
+    </header>
+    <main class="principal">
+        <div class="menu__principal">
+            <nav class="navegacao">
+              <a id="treinos" class="icon__menu" onclick="reload()">
+                <img class="icon__img" src="./assets/img/menu/halter.png" alt="" srcset="">
+                <h2 class="icon__menu___texto">Treinos</h2>
+              </a>
+              <a class="icon__menu">
+                <img class="icon__img" src="./assets/img/menu/imc.png" alt="" srcset="">
+                <h2 class="icon__menu___texto">IMC</h2>
+              </a>
+              <a class="icon__menu">
+                <img class="icon__img" src="./assets/img/menu/dicas.svg" alt="" srcset="">
+                <h2 class="icon__menu___texto">Dicas</h2>
+              </a>
+            </nav>
+        <div class="conteudo" id="conteudo" action="">
+            <form class="formulario" action="">
+                <label for="" class="formulario__texto">Peso</label>
+                <input type="number" class="input" name="" id="peso" placeholder="Escreva em Kg - Ex 90" required>
+                <label for="" class="formulario__texto">Altura</label>
+                <input type="number" class="input" name="" id="altura" placeholder="Escreva em Cm - Ex: 180" required>
+                <input type="submit" class="send" id="send" value="Calcular">
+                <!-- <input type="text" name="name" id="name">
+                <input type="submit" id="send" value="Enviar"> -->
+            </form>
+            <h1 class="texto_teste" id="imcTexto"></h1>
+            <img class="conteudo__imagem1 imc_hide" id="conteudo__imagem" src="./assets/img/nevergiveup.svg" alt="" srcset="">
+            <h1 class="texto_teste" id="imcTexto2"></h1>
+
+        </div>
+    </main>
+
+<footer class="rodape">
+  <a class="texto__rodape">CATARSY©</a>
+</footer>
+
+</body>
+</html>
