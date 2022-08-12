@@ -60,7 +60,7 @@ btn.addEventListener("click", function(e) {
         conteudoImagem.src="./assets/img/shape/superobeso.png"
         conteudoImagem.classList.toggle("imc_hide");
         imcId.innerHTML = "Seu IMC é " + (imc * 10000).toFixed(2);  
-        imcId2.innerHTML = "Você está em nível de Além da Obesidade, procure ajuda Urgente!";  
+        imcId2.innerHTML = "Você está Além da Obesidade, procure ajuda Urgentemente!";  
     }
 
     

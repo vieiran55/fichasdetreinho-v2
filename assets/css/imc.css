@@ -48,3 +48,13 @@
 .input::placeholder{
     text-align: center;
 }
+
+.rodape_imc {
+    background: #43E97B;
+    text-align: center;
+    font-size: 10px;
+    width: 100%;
+    line-height: 4em;
+    margin-top: 100vw;
+    
+}
