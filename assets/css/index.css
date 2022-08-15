@@ -250,7 +250,7 @@ button:active {
     text-align: center;
     font-size: 10px;
     width: 100%;
-    line-height: 2em;
+    line-height: 4em;
     margin-top: 50vw;
     
 }
@@ -258,4 +258,76 @@ button:active {
   color: #b3a4c7;
   text-shadow: 1px 0px 2px black, 1px 0px 0em darkgreen, 4px 0px 1.2em darkgreen;
   font-family: 'Cinzel', serif;
+}
+
+@media screen and (min-width: 768px) {
+
+  .cabecalho{
+    border-radius: 1rem;
+    background-size: 20%;
+    padding: 4vw;
+    margin: 0.3rem 0.75rem auto 0.75rem;
+  }
+
+  .navegacao {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5em 11em;
+}
+.menu__treinos___selecao {
+  padding: 0.5em 11em;
+}
+
+.lista__treinos{
+  justify-content: space-around;
+  padding: 0.5em 11em;
+}
+
+.conteudo__container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.rodape {
+  margin-top: 50vw;
+  
+}
+}
+
+@media screen and (min-width: 1200px) {
+
+  .cabecalho{
+    border-radius: 1rem;
+    background-size: 20%;
+    padding: 2vw;
+    margin: 0.3rem 0.75rem auto 0.75rem;
+  }
+
+  .navegacao {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5em 30em;
+}
+.menu__treinos___selecao {
+  padding: 0.5em 32em;
+}
+
+.lista__treinos{
+  justify-content: space-around;
+  padding: 0.5em 32em;
+}
+
+.conteudo__container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.rodape {
+  margin-top: 50vw;
+  
+}
 }
