@@ -1,120 +1,122 @@
 <!DOCTYPE html>
 <html lang="PT-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Treinos</title>
-    
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/index.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Treinos</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/index.css">
+  <link rel="stylesheet" href="./assets/css/menuhamburguer.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
 
 </head>
+
 <body class="corpo">
-    <header class="cabecalho">
-        <h1 class="treino_titulo" onclick="reload()">Ficha de Treinos</h1>
-    </header>
-    <main class="principal">
-        <div class="menu__principal">
-          <nav class="navegacao">
-            <a id="treinos" class="icon__menu">
-              <img class="icon__img" src="./assets/img/menu/halter.png" alt="" srcset="">
-              <h2 class="icon__menu___texto">Treinos</h2>
-            </a>
-            <a class="icon__menu"  onclick="imc()">
-              <img class="icon__img" src="./assets/img/menu/imc.png" alt="" srcset="">
-              <h2 class="icon__menu___texto">IMC</h2>
-            </a>
-            <a class="icon__menu">
-              <img class="icon__img" src="./assets/img/menu/dicas.svg" alt="" srcset="">
-              <h2 class="icon__menu___texto">Dicas</h2>
-            </a>
-          </nav>
+  <header class="cabecalho">
+    <a class="cabecalho__imagem"></a>
+  
+    <h1 class="treino_titulo" onclick="reload()">Fichas de Treino</h1>
+  
+    <nav class="cabecalho__menu " id="myLinks">
+      <button id="btn-mobile">
+  
+        <span id="hamburguer"></span>
+      </button>
+      <ul class="cabecalho__menu___container">
+        <li class="cabecalho__menu___itens"><a href="">Treinos</a>
+          <ul>
+            <li class="cabecalho__menu___itens"><a href="./assets/pages/abcde.html">ABC2x</a></li>
+            <li class="cabecalho__menu___itens"><a href="./assets/pages/abcde.html">ABCDE</a></li>
+            <li class="cabecalho__menu___itens"><a href="./assets/pages/phat.html">PHAT</a></li>
+            <li class="cabecalho__menu___itens"><a href="./assets/pages/ab.html">AB</a></li>
+            <li class="cabecalho__menu___itens"><a href="./assets/pages/uplow.html">UP/LOW</a></li>
+            <li class="cabecalho__menu___itens"><a href="./assets/pages/abs.html">ABS</a></li>
+          </ul>
+        </li>
+        <li class="cabecalho__menu___itens"><a href="#">Calculadoras</a>
+          <ul>
+            <li class="cabecalho__menu___itens"><a href="./assets/pages/imc.html">IMC</a></li>
+            <li class="cabecalho__menu___itens"><a href="./assets/pages/imc.html">Taxa Meta</a></li>
+          </ul>
+        </li>
+        <li class="cabecalho__menu___itens"><a href="">Dicas</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="principal">
+    <div class="menu__principal">
+      <!-- <nav class="navegacao">
+          <a id="treinos" class="icon__menu">
+            <img class="icon__img" src="./assets/img/menu/halter.png" alt="" srcset="">
+            <h2 class="icon__menu___texto">Treinos</h2>
+          </a>
+          <a class="icon__menu"  onclick="imc()">
+            <img class="icon__img" src="./assets/img/menu/imc.png" alt="" srcset="">
+            <h2 class="icon__menu___texto">IMC</h2>
+          </a>
+          <a class="icon__menu">
+            <img class="icon__img" src="./assets/img/menu/dicas.svg" alt="" srcset="">
+            <h2 class="icon__menu___texto">Dicas</h2>
+          </a>
+        </nav> -->
 
-            <div  class="menu__treinos">
-              <div class="menu__treinos___selecao mTS_hide" id="tiposDeTreinos">
-                <div class="menu__treinos___selecao1" id="abc2x__lista">ABC2x</div>
-                <div class="menu__treinos___selecao1" id="abcde__lista">ABCDE</div>
-                <div class="menu__treinos___selecao1" id="phat__lista">PHAT</div>
-                <div class="menu__treinos___selecao1" id="ab__lista">AB</div>
-                <div class="menu__treinos___selecao1" id="uplower__lista">UP/LOW</div>
-                <div class="menu__treinos___selecao1" id="abs__lista" onclick="abs()">ABS</div>
-
-              </div>
-
-              <div class="lista__treinos">
-                <div class="ABC2x ABC2x_hide" id="abc2xtreinos">
-                  <div class="menu__treinos_geral pull1" onclick="pull1()">Pull I</div>
-                  <div class="menu__treinos_geral push1" onclick="push1()">Push I</div>
-                  <div class="menu__treinos_geral legs1" onclick="legs1()">Legs I</div>
-                  <div class="menu__treinos_geral pull2" onclick="pull2()">Pull II</div>
-                  <div class="menu__treinos_geral legs2" onclick="legs2()">Legs II</div>
-                  <div class="menu__treinos_geral push2" onclick="push2()">Push II</div>
-              </div>
-
-              <div class="ABCDE abcde_hide" id="abcdetreinos">
-                <div class="menu__treinos_geral" onclick="abcde1()">Dorsais</div>
-                <div class="menu__treinos_geral" onclick="abcde2()">MMII</div>
-                <div class="menu__treinos_geral" onclick="abcde3()">Delts</div>
-                <div class="menu__treinos_geral" onclick="abcde4()">Peitorais</div>                  <div class="menu__treinos_geral" onclick="abcde5()">Pontos Fracos</div>
-            </div>
-
-            <div class="PATH path_hide" id="pathtreinos">
-              <div class="menu__treinos_geral" onclick="phat1()">Sup I</div>
-              <div class="menu__treinos_geral" onclick="phat2()">Inf I</div>
-              <div class="menu__treinos_geral" onclick="phat3()">Costas Omb</div>
-              <div class="menu__treinos_geral" onclick="phat4()">Inf II</div>
-              <div class="menu__treinos_geral" onclick="phat5()">Peito Braço</div>
-          </div>
-
-          <div class="AB ab_hide" id="abtreinos">
-            <div class="menu__treinos_geral" onclick="phat1()">Lower</div>
-            <div class="menu__treinos_geral" onclick="phat2()">Upper</div>
-        </div>
-
-        <div class="UPLOWER uplower_hide" id="uplowertreinos">
-          <div class="menu__treinos_geral" onclick="phat1()">Upper Força</div>
-          <div class="menu__treinos_geral" onclick="phat2()">Lower Força</div>
-          <div class="menu__treinos_geral" onclick="phat1()">Upper</div>
-          <div class="menu__treinos_geral" onclick="phat2()">Lower</div>
-        </div>
-              </div>
-
-                
-          
-            </div>
-        </div>
-        
-        <div class="conteudo__container">
-          <div class="conteudo" id="conteudo">
-            <img class="conteudo__imagem" id="conteudo__imagem" src="./assets/img/nevergiveup.svg" alt="" srcset="">
-        </div>
-        </div>
+   
 
 
-        <div>
-          <div class="cronometro">
-            <p class="tempo">
-              <span class="minutos">00</span>:<span class="segundos">00</span>:<span class="milissegundos">00</span>
-            </p>
-            <div>
-              <button onclick="iniciar()" class="iniciar"><img  class="btn__cronometro" src="./assets/img/cronometro/play.png" alt="" srcset=""></button>
-              <button onclick="parar()" class="parar"><img  class="btn__cronometro" src="./assets/img/cronometro/pause.png" alt="" srcset=""></button>
-              <button onclick="resetar()" class="resetar"><img  class="btn__cronometro" src="./assets/img/cronometro/loop.png" alt="" srcset=""></button>
-            </div>
+    </div>
+    </div>
+
+    <div class="conteudo__container">
+      <div class="conteudo" id="conteudo">
+        <img class="conteudo__imagem" id="conteudo__imagem" src="./assets/img/Clean-Pull.webp" alt="" srcset="">
+        <iframe class="video" src="https://www.youtube.com/embed/rdPp4cPnhkM?controls=0" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+        <img class="conteudo__imagem1" id="conteudo__imagem" src="./assets/img/nevergiveup.svg" alt="" srcset="">
+
+      </div>
+      <div>
+
+      </div>
+
+    </div>
+
+    <!-- 
+      <div>
+        <div class="cronometro">
+          <p class="tempo">
+            <span class="minutos">00</span>:<span class="segundos">00</span>:<span class="milissegundos">00</span>
+          </p>
+          <div>
+            <button onclick="iniciar()" class="iniciar"><img  class="btn__cronometro" src="./assets/img/cronometro/play.png" alt="" srcset=""></button>
+            <button onclick="parar()" class="parar"><img  class="btn__cronometro" src="./assets/img/cronometro/pause.png" alt="" srcset=""></button>
+            <button onclick="resetar()" class="resetar"><img  class="btn__cronometro" src="./assets/img/cronometro/loop.png" alt="" srcset=""></button>
           </div>
         </div>
-    </main>
+      </div> -->
+  </main>
 
-    <footer class="rodape">
-      <a class="texto__rodape">CATARSY©</a>
-    </footer>
-    <script src="./assets/js/index.js"></script>
-    <script src="./assets/js/treinos.js"></script>
-    <script src="./assets/js/cronometro.js"></script>
+  <footer class="rodape">
+    <a class="texto__rodape">CATARSY©</a>
+  </footer>
+
+
+  <script src="./assets/js/index.js"></script>
+  <script src="./assets/js/treinos.js"></script>
+  <script src="./assets/js/cronometro.js"></script>
+  <script src="./assets/js/menuhamburguer.js"></script>
+
 </body>
+
 </html>

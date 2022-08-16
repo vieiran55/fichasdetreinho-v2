@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+
+<head> 
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Treinos</title>
+
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/menuhamburguer.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+
+</head>
+<header class="cabecalho">
+  <a class="cabecalho__imagem"></a>
+
+  <h1 class="treino_titulo" onclick="reload()">Fichas de Treino</h1>
+
+  <nav class="cabecalho__menu " id="myLinks">
+    <button id="btn-mobile">
+
+      <span id="hamburguer"></span>
+    </button>
+    <ul class="cabecalho__menu___container">
+      <li class="cabecalho__menu___itens"><a href="">Treinos</a>
+        <ul>
+          <li class="cabecalho__menu___itens"><a href="./abc2x.html">ABC2x</a></li>
+          <li class="cabecalho__menu___itens"><a href="./abcde.html">ABCDE</a></li>
+          <li class="cabecalho__menu___itens"><a href="./phat.html">PHAT</a></li>
+          <li class="cabecalho__menu___itens"><a href="./ab.html">AB</a></li>
+          <li class="cabecalho__menu___itens"><a href="./uplow.html">UP/LOW</a></li>
+          <li class="cabecalho__menu___itens"><a href="./abs.html">ABS</a></li>
+        </ul>
+      </li>
+      <li class="cabecalho__menu___itens"><a href="#">Calculadoras</a>
+        <ul>
+          <li class="cabecalho__menu___itens"><a href="./imc.html">IMC</a></li>
+          <li class="cabecalho__menu___itens"><a href="./imc.html">Taxa Meta</a></li>
+        </ul>
+      </li>
+      <li class="cabecalho__menu___itens"><a href="">Dicas</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="principal">
+  <div class="menu__principal">
+    <div class="lista__treinos">
+
+      <div class="UPLOWER uplower_hide" id="uplowertreinos">
+        <div class="menu__treinos_geral" onclick="phat1()">Upper Força</div>
+        <div class="menu__treinos_geral" onclick="phat2()">Lower Força</div>
+        <div class="menu__treinos_geral" onclick="phat1()">Upper</div>
+        <div class="menu__treinos_geral" onclick="phat2()">Lower</div>
+      </div>
+    </div>
+
+
+
+  </div>
+  </div>
+
+  <div class="conteudo__container">
+    <div class="conteudo" id="conteudo">
+      <img class="conteudo__imagem1" id="conteudo__imagem" src="../img/nevergiveup.svg" alt="" srcset="">
+    </div>
+  </div>
+
+
+  <div>
+    <div class="cronometro">
+      <p class="tempo">
+        <span class="minutos">00</span>:<span class="segundos">00</span>:<span class="milissegundos">00</span>
+      </p>
+      <div>
+        <button onclick="iniciar()" class="iniciar"><img class="btn__cronometro" src="../img/cronometro/play.png" alt=""
+            srcset=""></button>
+        <button onclick="parar()" class="parar"><img class="btn__cronometro" src="../img/cronometro/pause.png" alt=""
+            srcset=""></button>
+        <button onclick="resetar()" class="resetar"><img class="btn__cronometro" src="../img/cronometro/loop.png" alt=""
+            srcset=""></button>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+<script src="../js/index.js"></script>
+<script src="../js/treinos.js"></script>
+<script src="../js/cronometro.js"></script>
+<script src="../js/cronometro.js"></script>
+<script src="../js/menuhamburguer.js"></script>
+
+</body>
+
+</html>

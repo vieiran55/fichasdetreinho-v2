@@ -6,36 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Treinos</title>
     
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/index.css">
-    <link rel="stylesheet" href="./assets/css/imc.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/imc.css">
+    <link rel="stylesheet" href="../css/menuhamburguer.css">
 
-    <script src="./assets/js/imc.js" defer></script>
+    <script src="../js/imc.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
 </head>
 <body class="corpo">
-    <header class="cabecalho">
-        <h1 class="treino_titulo" onclick="reload()">Ficha de Treinos</h1>
-    </header>
+  <header class="cabecalho">
+    <a class="cabecalho__imagem"></a>
+  
+    <h1 class="treino_titulo" onclick="reload()">Fichas de Treino</h1>
+  
+    <nav class="cabecalho__menu " id="myLinks">
+      <button id="btn-mobile">
+  
+        <span id="hamburguer"></span>
+      </button>
+      <ul class="cabecalho__menu___container">
+        <li class="cabecalho__menu___itens"><a href="">Treinos</a>
+          <ul>
+            <li class="cabecalho__menu___itens"><a href="./abc2x.html">ABC2x</a></li>
+            <li class="cabecalho__menu___itens"><a href="./abcde.html">ABCDE</a></li>
+            <li class="cabecalho__menu___itens"><a href="./phat.html">PHAT</a></li>
+            <li class="cabecalho__menu___itens"><a href="./ab.html">AB</a></li>
+            <li class="cabecalho__menu___itens"><a href="./uplow.html">UP/LOW</a></li>
+            <li class="cabecalho__menu___itens"><a href="./abs.html">ABS</a></li>
+          </ul>
+        </li>
+        <li class="cabecalho__menu___itens"><a href="#">Calculadoras</a>
+          <ul>
+            <li class="cabecalho__menu___itens"><a href="./imc.html">IMC</a></li>
+            <li class="cabecalho__menu___itens"><a href="./imc.html">Taxa Meta</a></li>
+          </ul>
+        </li>
+        <li class="cabecalho__menu___itens"><a href="">Dicas</a></li>
+      </ul>
+    </nav>
+  </header>
+  
     <main class="principal">
         <div class="menu__principal">
-            <nav class="navegacao">
-              <a id="treinos" class="icon__menu" onclick="reload()">
-                <img class="icon__img" src="./assets/img/menu/halter.png" alt="" srcset="">
-                <h2 class="icon__menu___texto">Treinos</h2>
-              </a>
-              <a class="icon__menu">
-                <img class="icon__img" src="./assets/img/menu/imc.png" alt="" srcset="">
-                <h2 class="icon__menu___texto">IMC</h2>
-              </a>
-              <a class="icon__menu">
-                <img class="icon__img" src="./assets/img/menu/dicas.svg" alt="" srcset="">
-                <h2 class="icon__menu___texto">Dicas</h2>
-              </a>
-            </nav>
             <div class="conteudo__container1">
                 <div class="conteudo" id="conteudo" action="">
                     <form class="formulario" action="">
@@ -58,6 +74,9 @@
 <footer class="rodape_imc">
   <a class="texto__rodape">CATARSY©</a>
 </footer>
+<script src="../js/treinos.js"></script>
+<script src="../js/cronometro.js"></script>
+<script src="../js/menuhamburguer.js"></script>
 
 </body>
 </html>

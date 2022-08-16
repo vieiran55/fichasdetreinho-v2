@@ -1,0 +1,31 @@
+# Query: Ficha de Treino
+# Flags: CaseSensitive
+# Including: ./assets/pages
+# ContextLines: 1
+
+5 resultados - 5 arquivos
+
+assets\pages\ab.html:
+  21  
+  22:   <h1 class="treino_titulo" onclick="reload()">Fichas de Treinos</h1>
+  23  
+
+assets\pages\abc2x.html:
+  21  
+  22:   <h1 class="treino_titulo" onclick="reload()">Fichas de Treinos</h1>
+  23  
+
+assets\pages\abcde.html:
+  21  
+  22:   <h1 class="treino_titulo" onclick="reload()">Fichas de Treinos</h1>
+  23  
+
+assets\pages\phat.html:
+  21  
+  22:   <h1 class="treino_titulo" onclick="reload()">Fichas de Treinos</h1>
+  23  
+
+assets\pages\uplow.html:
+  21  
+  22:   <h1 class="treino_titulo" onclick="reload()">Fichas de Treinos</h1>
+  23  
