@@ -34,23 +34,23 @@ function legs2 () {
 
 ////////////////////
 
-function abcde1() {
+function delts() {
     document.getElementById("conteudo__imagem").src="../img/treinos/abcde/Delts.png"
 }
 
-function abcde2() {
+function dorsais() {
     document.getElementById("conteudo__imagem").src="../img/treinos/abcde/Dorsais.png"
 }
 
-function abcde3() {
+function mmii() {
     document.getElementById("conteudo__imagem").src="../img/treinos/abcde/MMII.png"
 }
 
-function abcde4() {
+function peitorais() {
     document.getElementById("conteudo__imagem").src="../img/treinos/abcde/Peitorais.png"
 }
 
-function abcde5() {
+function pontosFracos() {
     document.getElementById("conteudo__imagem").src="../img/treinos/abcde/PontosFracos.png"
 }
 
