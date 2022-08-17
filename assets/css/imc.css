@@ -10,6 +10,11 @@
     font-size: 12px;
     font-weight: bold;
     margin: 1em;
+    color: #f7f7f7;
+}
+
+.ast {
+    color: blue;
 }
 
 .conteudo__imagem1{
