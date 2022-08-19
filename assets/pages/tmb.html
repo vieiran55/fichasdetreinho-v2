@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../css/imc.css">
     <link rel="stylesheet" href="../css/menuhamburguer.css">
 
-    <script src="../js/imc.js" defer></script>
+    <!-- <script src="../js/imc.js" defer></script> -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,7 +50,7 @@
         <li class="cabecalho__menu___itens"><a href="#">&#129518 Calculadoras</a>
           <ul>
             <li class="cabecalho__menu___itens"><a href="./imc.html">&#129518 IMC</a></li>
-            <li class="cabecalho__menu___itens"><a href="./imc.html">&#129518 Taxa Metabolica Basal</a></li>
+            <li class="cabecalho__menu___itens"><a href="./tmb.html">&#129518 Taxa Metabolica Basal</a></li>
           </ul>
         </li>
         <li class="cabecalho__menu___itens"><a href="">&#128161 Dicas</a></li>
@@ -62,37 +62,54 @@
         <div class="menu__principal">
             <div class="conteudo__container1">
                 <div class="conteudo" id="conteudo" action="">
-                    <form class="formulario" action="">
-                        <a class="formulario__texto" >SEXO*</a>
+                  
+                  <h1 class="formulario__titulo">CÁLCULO DA TAXA METABÓLICA BASAL</h1>
+                  
+                  
+                  <form class="formulario" action="">
+                    <label for="" class="formulario__texto">SEXO <a class="ast">*</a></label>
                         <div>
                             <label for="" class="formulario__texto">Masculino</label>
-                            <input type="checkbox" class="input" name="Masculino" id="masculino"required>
-                            <label for="" class="formulario__texto">Feminino</label>
-                            <input type="checkbox" class="input" name="Feminino" id="feminino" required>
+                            <input name="theradio"  type="radio" class="input" name="Masculino" id="masculino"required>
+                            <label for=""  class="formulario__texto">Feminino</label>
+                            <input name="theradio" type="radio" class="input" name="Feminino" id="feminino" required>
                         </div>
-                       
-                        <label for="" class="formulario__texto">PEso(cm) <a class="ast">*</a></label>
+
+                        <h1 class="texto_teste" id="tmbTexto"></h1>
+                                               
+                        <label for="" class="formulario__texto">Peso(kg) <a class="ast">*</a></label>
                         <input type="number" class="input" name="" id="peso" placeholder="" required>
-                        <label for="" class="formulario__texto">Altura(kg) <a class="ast">*</a></label>
+                        <label for="" class="formulario__texto">Altura(cm) <a class="ast">*</a></label>
                         <input type="number" class="input" name="" id="altura" placeholder="" required>
                         <label for="" class="formulario__texto">Idade(anos) <a class="ast">*</a></label>
-                        <input type="number" class="input" name="" id="altura" placeholder="" required>
+                        <input type="number" class="input" name="" id="idade" placeholder="" required>
                         <input type="submit" class="send" id="send" value="Calcular">
+
+                        <label for="" class="formulario__texto">Taxa Metabolioca Basal</label>
+                        <input type="text" class="place" name="placeTMB" id="tmbSedentario" placeholder="" disabled>
+
+                        <h2 class="formulario__texto2">Necessidade diária de Calorias:</h2>
+
+                        <label for="" class="formulario__texto">Sedentário (Nenhuma Atividade)</label>
+                        <input type="text" class="place" name="placeSedentario" id="tmbSedentario" placeholder="" disabled>
+                        <label for="" class="formulario__texto">Atividade física moderada (1-3x)</label>
+                        <input type="text" class="place" name="placeModerado" id="tmbModerado" placeholder=""  disabled>
+                        <label for="" class="formulario__texto">Atividade física intensa (Acima de 4x)</label>  
+                        <input type="text" class="place" name="placeIntenso" id="tmbIntenso" placeholder=""  disabled>
+
+
+
                         <!-- <input type="text" name="name" id="name">
                         <input type="submit" id="send" value="Enviar"> -->
                     </form>
-                    <h1 class="texto_teste" id="imcTexto"></h1>
-                    <img class="conteudo__imagem1 imc_hide" id="conteudo__imagem" src="./assets/img/nevergiveup.svg" alt="" srcset="">
-                    <h1 class="texto_teste" id="imcTexto2"></h1>
 
                 </div>
             </div>
     </main>
 
-<footer class="rodape_imc">
+<footer class="rodape_tmb">
   <a class="texto__rodape">CATARSY©</a>
 </footer>
-<script src="../js/treinos.js"></script>
 <script src="../js/tmb.js"></script>
 <script src="../js/cronometro.js"></script>
 <script src="../js/menuhamburguer.js"></script>
