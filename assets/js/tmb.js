@@ -54,7 +54,6 @@ btn.addEventListener("click", function(e) {
             document.getElementsByName('placeIntenso')[0].placeholder=`${ndcIntenso.toFixed(1)} Cal = NDC`
 
     } else if (femininoValue == true && masculinoValue == false) {
-        alert('muie')
         var tmbFeminino = 66.5 + (13.7 * pesoValue) + (5 * alturaValue) - (6.7 * idadeValue)
 
             var ndcSedentario = tmbFeminino * 1.19 
@@ -71,7 +70,6 @@ btn.addEventListener("click", function(e) {
 
     } else {
         tmb.innerHTML = "Selecione o Sexo"
-        alert('escolhe um sexo puto')
     }
 
 })
